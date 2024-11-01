@@ -284,15 +284,21 @@ function App() {
             )
           )}
         </div>
-        <div className="mt-6 w-full md:w-1/2">
-          <input 
-            type="text" 
-            placeholder="Search for a skill" 
-            className="w-full p-3 border rounded-md"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-        </div>
+        <div className="flex mt-6 w-full md:w-1/2">
+  <input 
+    type="text" 
+    placeholder="Search for a skill" 
+    className="flex-grow p-3 border rounded-l-md"
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+  />
+  <button 
+    onClick={() => handleSubmit()} // or any function you want to trigger
+    className="p-3 border rounded-r-md bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200"
+  >
+    Search
+  </button>
+</div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6 w-full md:w-1/2">
           {/* Render selected skills first */}
           {selected.map(skill => (
