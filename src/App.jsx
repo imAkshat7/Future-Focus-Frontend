@@ -293,10 +293,10 @@ function App() {
     onChange={(e) => setSearchTerm(e.target.value)}
   />
   <button 
-    onClick={() => handleSubmit()} // or any function you want to trigger
-    className="p-3 border rounded-r-md bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200"
+    onClick={handleSubmit} // or any function you want to trigger
+    className="p-3 border rounded-r-md bg-blue-600 hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
   >
-    Search
+    <i className="fas fa-search text-white"></i>
   </button>
 </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6 w-full md:w-1/2">
