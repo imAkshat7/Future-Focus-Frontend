@@ -298,7 +298,6 @@ function App() {
   >
     <i className="fas fa-search text-white"></i>
   </button>
-</div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6 w-full md:w-1/2">
           {/* Render selected skills first */}
           {selected.map(skill => (
