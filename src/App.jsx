@@ -284,7 +284,7 @@ function App() {
             )
           )}
         </div>
-        <div className="flex mt-6 w-full md:w-1/2">
+  <div className="flex mt-6 w-full md:w-1/2">
   <input 
     type="text" 
     placeholder="Search for a skill" 
@@ -298,6 +298,7 @@ function App() {
   >
     <i className="fas fa-search text-white"></i>
   </button>
+</div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6 w-full md:w-1/2">
           {/* Render selected skills first */}
           {selected.map(skill => (
